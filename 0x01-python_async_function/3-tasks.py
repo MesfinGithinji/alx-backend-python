@@ -10,6 +10,6 @@ def task_wait_random(max_delay: int) -> asyncio.Task:
     Return a task that waits for a random number of seconds
     Args:
         max_delay: is the maximum number of seconds that the task will wait
-    Returns: an asyncio.Task object
+    Returns: the asyncio.Task object
     """
     return asyncio.create_task(wait_random(max_delay))
